@@ -1,0 +1,51 @@
+body > div {
+    margin: auto;
+    flex-direction: column;
+    margin: 32px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.btn + .btn {
+    margin-left: 16px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.btn--success {
+    background-color: #71be34
+}
+
+.btn--warn {
+    background-color: #ffb702
+}
+
+.btn--error {
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+.btn--l {
+    padding: 16px 32px;
+}
+
+.btn--s {
+    padding: 8px 16px;
+}
+
