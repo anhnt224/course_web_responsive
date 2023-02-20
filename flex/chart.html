@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-family: sans-serif;
+        }
+        .chart {
+            background-color: lightcyan;
+            height: 512px;
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+        }
+
+        .chart__item {
+            flex-basis: 15%;
+            height: var(--percent);
+            background-color: brown;
+            text-align: center;
+            padding: 8px;
+            color: white;
+            animation: growUp ease-in 1s;
+        }
+
+        @keyframes growUp {
+            from {
+                height: 0%;
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+                height: var(--percent);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chart">
+        <div class="chart__item" style="--percent: 10%">10%</div>
+        <div class="chart__item" style="--percent: 20%">20%</div>
+        <div class="chart__item" style="--percent: 50%">50%</div>
+        <div class="chart__item" style="--percent: 30%">30%</div>
+        <div class="chart__item" style="--percent: 40%">40%</div>
+    </div>
+</body>
+</html>

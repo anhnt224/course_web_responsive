@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        .end-layout {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .first-layout {
+            padding: 16px;
+            background-color: wheat;
+            flex: 1;
+        }
+
+        .second-layout {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second-layout__child {
+            padding: 16px;
+        }
+
+        .second-layout__child:nth-child(1) {
+            background-color: lightblue;
+            flex: 1;
+        }
+
+        .second-layout__child:nth-child(2) {
+            background-color: lightcoral;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="end-layout">
+        <div class="first-layout">I'm writing to you in reference to the job position advertised MyCV.vn which
+            immediately appealed to me. Since I've been interested in your company for a long time, I would like to
+            apply today as a sample position in permanent employmentI'm writing to you in reference to the job position advertised MyCV.vn which
+            immediately appealed to me. Since I've been interested in your company for a long time, I would like to
+            apply today as a sample position in permanent employmentI'm writing to you in reference to the job position advertised MyCV.vn which
+            immediately appealed to me. Since I've been interested in your company for a long time, I would like to
+            apply today as a sample position in permanent employmentI'm writing to you in reference to the job position advertised MyCV.vn which
+            immediately appealed to me. Since I've been interested in your company for a long time, I would like to
+            apply today as a sample position in permanent employmentI'm writing to you in reference to the job position advertised MyCV.vn which
+            immediately appealed to me. Since I've been interested in your company for a long time, I would like to
+            apply today as a sample position in permanent employment</div>
+        <div class="second-layout">
+            <div class="second-layout__child">I'm writing to you in reference to the job position advertised MyCV.vn
+                which immediately appealed to me. Since I've been interested in your company for a long time, I would
+                like to apply today as a sample position in permanent employment</div>
+            <div class="second-layout__child">I'm writing to you in reference to the job position advertised MyCV.vn
+                which immediately appealed to me. Since I've been interested in your company for a long time, I would
+                like to apply today as a sample position in permanent employment</div>
+        </div>
+    </div>
+</body>
+
+</html>

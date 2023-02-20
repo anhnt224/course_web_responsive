@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            font-family: sans-serif;
+        }
+        .row {
+            background-color: beige;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .row__item {
+            height: 128px;
+            text-align: center;
+            background-color: aqua;
+            width: 128px;
+        }
+
+        .row__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: orange;
+            font-size: 50px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="row__item"><p class="row__title">1</p></div>
+        <div class="row__item"><p class="row__title">2</p></div>
+        <div class="row__item"><p class="row__title">3</p></div>
+        <div class="row__item"><p class="row__title">4</p></div>
+        <div class="row__item"><p class="row__title">5</p></div>
+    </div>
+</body>
+</html>
